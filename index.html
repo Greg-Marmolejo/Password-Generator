@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
-  </head>
-  <body>
-    <header>
-      <h1>Password Generator</h1>
-    </header>
-    <h2>Generate a Password</h2>
-    <textarea
-      readonly
-      id="password"
-      placeholder="Your Secure Password"
-      aria-label="Generated Password"
-    ></textarea>
-    <button id="generate">Generate Password</button>
-    <button id="copy">
-      Copy to Clipboard
-    </button>
-  </body>
+</head>
+
+<body>
+    <div class="container" style="margin: auto;">
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <h2>Generate a Password</h2>
+        <form>
+            <div class="form-group">
+                <label for="passwordBox">Password</label>
+                <textarea class="form-control" readonly id="passwordBox" placeholder="Your Secure Password"
+                    aria-label="Generated Password" rows="3"></textarea>
+            </div>
+        </form>
+        <hr>
+        <!--Generate button that performs the function generatePassword when clicked.-->
+        <button id="generate">Generate Password</button>
+        <button id="copy">
+            Copy to Clipboard
+        </button>
+    </div>
+</body>
+
+<script src="passGenV2.js"></script>
+
 </html>
