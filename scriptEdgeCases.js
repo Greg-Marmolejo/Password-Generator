@@ -10,9 +10,12 @@ generateEl.addEventListener("click");
 //Prompt user for length of their password. Confirm that the length is between 8 and 128 characters)
 var pwLength = prompt("Please specify a length for your password between 8 and 128 characters");
 
-if (pwLength > 8 && pwLength <128) {
-    else
-var pwLength = prompt("Password must be between 8 and 128 characters.  Please re-enter");
+if (pwLength > 8 && pwLength <=128) {
+    }
+
+else {
+    var pwLength = prompt("Password must be between 8 and 128 characters.  Please re-enter");
+
 }
 
 //Create an empty array, and create different arrays for the types of characters to be used.
@@ -85,6 +88,7 @@ for (var i = 0; i < (pwLength-requiredLength); i++) {
 document.getElementById('passwordBox').value = password;
 }
 
+function copyPassword
 //Button copies the password to clipboard and writes password into the text area labelled "Your Secure Password".
 function copyPassword() {
 var copyText = document.getElementById("passwordBox");

@@ -3,4 +3,26 @@
     margin: 0 auto;
     background-color: #ccecec;
     border: solid 1px #cccccc;
+    padding: 50px;
+}
+
+#section {
+    background-color: white;
+    border: solid 1px #cccccc;
+    padding: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+#generate {
+    background-color: red;
+   border-radius: 20px;
+}
+
+#copy {
+    background-color: silver;
+    border-radius: 20px;
+    float: right;
 }

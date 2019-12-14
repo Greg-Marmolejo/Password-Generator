@@ -17,22 +17,25 @@
             <h1>Password Generator</h1>
         </header>
         <h2>Generate a Password</h2>
-        <form>
-            <div class="form-group">
-                <label for="passwordBox">Password</label>
-                <textarea class="form-control" readonly id="passwordBox" placeholder="Your Secure Password"
-                    aria-label="Generated Password" rows="3"></textarea>
-            </div>
-        </form>
-        <hr>
-        <!--Generate button that performs the function generatePassword when clicked.-->
-        <button id="generate">Generate Password</button>
-        <button id="copy">
-            Copy to Clipboard
-        </button>
+        <!--Create Box for Password Generator text area and buttons-->
+        <div id="section">
+            <form>
+                <div class="form-group">
+                    <label for="passwordBox"></label>
+                    <textarea class="form-control" readonly id="passwordBox" placeholder="Your Secure Password"
+                        aria-label="Generated Password" rows="3"></textarea>
+                </div>
+            </form>
+            <hr>
+            <!--Generate button that performs the function generatePassword when clicked.-->
+            <button id="generate">Generate Password</button>
+            <button id="copy">
+                Copy to Clipboard
+            </button>
+        </div>
     </div>
 </body>
 
-<script src="passGenV2.js"></script>
+<script src="script.js"></script>
 
 </html>
